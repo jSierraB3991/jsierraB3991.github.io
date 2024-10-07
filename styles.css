@@ -1,0 +1,98 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #2c2c2c;
+    padding-top: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.personal-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.experience-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.year {
+    flex-basis: 150px;
+    font-size: 1.3rem;
+    color: #ffcc00;
+}
+
+.job-details {
+    flex-grow: 1;
+}
+
+/* Education Section */
+.education-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.education-item {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
