@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS externo -->
 </head>
 <body>
-    <div class="d-flex">
+    <div class="d-flex flex-column flex-md-row">
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="profile-info text-center p-4">
@@ -19,6 +19,7 @@
             <nav class="nav flex-column mt-4">
                 <a href="#about" class="nav-link">Sobre mí</a>
                 <a href="#experience" class="nav-link">Experiencia</a>
+                <a href="#contributions" class="nav-link">Contrubiciones de la comunidad</a>
                 <a href="#education" class="nav-link">Educación</a>
                 <a href="#courses" class="nav-link">Cursos</a>
             </nav>
@@ -26,6 +27,23 @@
 
         <!-- Main Content -->
         <div class="main-content flex-grow-1">
+            <!-- Navbar for mobile view -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#about">Sobre mí</a>
+                            <a class="nav-link" href="#experience">Experiencia</a>
+                            <a class="nav-link" href="#education">Educación</a>
+                            <a class="nav-link" href="#courses">Cursos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
             <!-- About Section -->
             <section id="about" class="about-section p-5">
                 <div class="container">
@@ -85,12 +103,34 @@
                 </div>
             </section>
 
+            <section id="contributions" class="p-5">
+                <div class="container">
+                    <h2 class="section-title">Contribuciones a la Comunidad</h2>
+                    <h4>Proyectos en GitLab</h4>
+                    <ul>
+                        <li><a href="https://gitlab.com/eliotandelon/keycloak-my-client" target="_blank">keycloak-my-client</a>: Biblioteca que proporciona una interfaz simplificada en Go para interactuar con Keycloak, basada en el cliente GoCloak. Facilita su uso en múltiples proyectos.</li>
+                        <li><a href="https://gitlab.com/eliotandelon/brevo-email" target="_blank">brevo-email</a>: Interfaz en Go para interactuar con la API de Brevo, permitiendo enviar correos electrónicos y gestionar listas de contactos.</li>
+                        <li><a href="https://gitlab.com/eliotandelon/epayco-pays" target="_blank">epayco-pays</a>: Interfaz en Go para interactuar con la API de ePayco, permitiendo realizar pagos electrónicos, iniciar sesión y obtener información de transacciones.</li>
+                    </ul>
+            
+                    <h4>Proyectos en GitHub</h4>
+                    <ul>
+                        <li><a href="https://github.com/jSierraB3991/jsierra-libs" target="_blank">jsierra-libs</a>: Colección de funciones útiles para desarrollo rápido en Golang, diseñadas para facilitar tareas comunes y mejorar la productividad.</li>
+                        <li><a href="https://github.com/jSierraB3991/dotfiles" target="_blank">dotfiles</a>: Configuraciones para el windows manager de GNU/Linux.</li>
+                        <li><a href="https://github.com/jSierraB3991/golang-aws" target="_blank">golang-aws</a>: Repositorio para usar serverless con AWS, incluye dos colas para órdenes y pagos, y una base de datos DynamoDB, todo desplegado mediante SAM.</li>
+                        <li><a href="https://github.com/jSierraB3991/picoli" target="_blank">picoli</a>: Repositorio para probar ejemplos con la librería picocli de Java, incluyendo integración con Spring Boot.</li>
+                        <li><a href="https://github.com/jSierraB3991/XamarinAndroid" target="_blank">XamarinAndroid</a>: Repositorio para probar aplicaciones hechas con Xamarin Android.</li>
+                        <li><a href="https://github.com/jSierraB3991/myst" target="_blank">myst</a>: Repositorio de la compilación para la terminal personalizada ST.</li>
+                    </ul>
+                </div>
+            </section>
             <!-- Education Section -->
             <section id="education" class="education-section p-5">
                 <div class="container">
                     <h2 class="section-title">Educación</h2>
                     <div class="education-item mb-3">
-                        <p><strong>Análisis y Desarollo de Sistemas</strong> - SENA (SERVICIO NACIONAL DE APRENDIZAJE)</p>
+                        <h4>Programación y Análisis de Sistemas</h4>
+                        <p>SENA (Servicio Nacional de Aprendizaje)</p>
                         <p>2016 - 2021</p>
                     </div>
                 </div>
@@ -107,7 +147,7 @@
                         <li><a href="./diploma-go-unit-testing.pdf" target="_blank">Unit Testing con Golang - Platzi</a></li>
                     </ul>
                 </div>
-            </section>
+            </section>            
         </div>
     </div>
 
